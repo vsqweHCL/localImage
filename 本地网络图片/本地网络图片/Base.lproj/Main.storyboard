@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14868" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14824"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QdZ-yl-qtK">
+                                <rect key="frame" x="15" y="244" width="384" height="78"/>
+                                <color key="backgroundColor" red="0.4549019608" green="0.71372549019999998" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="78" id="eDV-vt-8NC"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="boC-l5-8rR">
+                                <rect key="frame" x="168.5" y="372" width="77" height="30"/>
+                                <state key="normal" title="提交给后台"/>
+                                <connections>
+                                    <action selector="submitAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="eI1-Kp-XgI"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GnV-7A-0uF">
+                                <rect key="frame" x="153" y="422" width="108" height="30"/>
+                                <state key="normal" title="恢复到原始数据"/>
+                                <connections>
+                                    <action selector="clearAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="BKb-bF-NJn"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="GnV-7A-0uF" firstAttribute="top" secondItem="boC-l5-8rR" secondAttribute="bottom" constant="20" id="8uV-Ns-KbD"/>
+                            <constraint firstItem="GnV-7A-0uF" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="BtW-gC-7nu"/>
+                            <constraint firstItem="boC-l5-8rR" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Qoh-4b-gPu"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="QdZ-yl-qtK" secondAttribute="trailing" constant="15" id="RFl-EE-0Ob"/>
+                            <constraint firstItem="QdZ-yl-qtK" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="200" id="TXG-b0-eeu"/>
+                            <constraint firstItem="QdZ-yl-qtK" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="15" id="neU-gk-LWe"/>
+                            <constraint firstItem="boC-l5-8rR" firstAttribute="top" secondItem="QdZ-yl-qtK" secondAttribute="bottom" constant="50" id="pG7-Ab-3j7"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="imgCntV" destination="QdZ-yl-qtK" id="fWz-DR-9x4"/>
+                        <outlet property="imgCntVH" destination="eDV-vt-8NC" id="Fru-Dl-M9t"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="131.8840579710145" y="138.61607142857142"/>
+        </scene>
+    </scenes>
+</document>
